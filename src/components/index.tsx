@@ -2,7 +2,6 @@ export { default as AppBar } from './AppBar/AppBar';
 export { default as AuthForm } from './AuthForm/AuthForm';
 export { default as Avatar } from './Avatar/Avatar';
 export { default as Button } from './Button/Button';
-export { default as Card } from './Card';
 export { default as DatePicker } from './DatePicker';
 export { default as DateTimePicker } from './DateTimePicker';
 export { default as Footer } from './Footer/Footer';
