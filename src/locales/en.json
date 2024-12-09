@@ -28,6 +28,15 @@
         "Signup requires a valid password": "Signup requires a valid password",
         "Password should be at least 6 characters": "Password should be at least 6 characters"
       }
+    },
+    "appBar": {
+      "logout": "Logout"
+    },
+    "homePage": {
+      "title": "Home"
+    },
+    "settingsPage": {
+      "title": "Settings"
     }
   }
 }

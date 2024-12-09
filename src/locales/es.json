@@ -28,6 +28,15 @@
         "Signup requires a valid password": "El registro requiere una contraseña válida",
         "Password should be at least 6 characters": "La contraseña debe tener al menos 6 caracteres"
       }
+    },
+    "appBar": {
+      "logout": "Cerrar sesión"
+    },
+    "homePage": {
+      "title": "Portada"
+    },
+    "settingsPage": {
+      "title": "Ajustes"
     }
   }
 }
