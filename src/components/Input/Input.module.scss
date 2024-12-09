@@ -1,0 +1,33 @@
+.input_group {
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+  
+    label {
+      margin-bottom: 0.5rem;
+    }
+  
+    .input {
+
+      background-color: #35353b;
+      color: #ccc;
+      outline: none;
+      padding: 0.5rem;
+      border: none;
+      border-radius: 2px;
+  
+      &.pt { 
+        
+      }
+  
+      &.en { 
+        
+      }
+  
+      &.es { 
+        
+      }
+    }
+  }

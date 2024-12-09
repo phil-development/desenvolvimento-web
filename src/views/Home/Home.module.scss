@@ -1,0 +1,19 @@
+@use '../../styles/variables';
+
+.container {
+
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.content {
+
+    width: 100%;
+    max-width: 400px;
+    padding: 0 2rem;
+
+}

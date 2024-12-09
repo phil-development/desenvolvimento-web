@@ -1,4 +1,4 @@
-import "./Settings.scss";
+import styles from "./Settings.module.scss";
 
 const Settings: React.FC = () => {
   return (

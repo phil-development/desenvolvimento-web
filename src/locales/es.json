@@ -1,0 +1,33 @@
+{
+  "translation": {
+    "signIn": {
+      "title": "Iniciar Sesión",
+      "email": "Correo electrónico",
+      "password": "Contraseña",
+      "signIn": "Iniciar Sesión",
+      "loading": "Cargando...",
+      "noAccount": "¿No tienes una cuenta? Regístrate",
+      "errors": {
+        "Invalid login credentials": "Credenciales de inicio de sesión inválidas",
+        "Email not confirmed": "Correo electrónico no confirmado",
+        "missing email or phone": "Falta correo electrónico o teléfono",
+        "Password should be at least 6 characters": "La contraseña debe tener al menos 6 caracteres"
+      }
+    },
+    "signUp": {
+      "title": "Registrarse",
+      "email": "Correo electrónico",
+      "password": "Contraseña",
+      "signUp": "Registrarse",
+      "loading": "Cargando...",
+      "alreadyHaveAccount": "¿Ya tienes una cuenta? Inicia sesión",
+      "errors": {
+        "User already registered": "Usuario ya registrado",
+        "Invalid email format": "Formato de correo electrónico inválido",
+        "Anonymous sign-ins are disabled": "Los registros anónimos están deshabilitados",
+        "Signup requires a valid password": "El registro requiere una contraseña válida",
+        "Password should be at least 6 characters": "La contraseña debe tener al menos 6 caracteres"
+      }
+    }
+  }
+}

@@ -1,5 +1,5 @@
 import React from "react";
-import "./Dashboard.scss";
+import styles from "./Dashboard.module.scss";
 
 const Dashboard: React.FC = () => {
   return (

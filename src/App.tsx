@@ -1,11 +1,13 @@
-import AppRoutes from "./routes";
+import React from 'react';
+import { AppContextProvider } from './Context';
+import AppRoutes from './routes/index';
+import './styles/main.scss';
 
-function App() {
-
+const App: React.FC = () => {
   return (
-    <>
-      <AppRoutes />
-    </>
+    <AppContextProvider>
+      <AppRoutes /> 
+    </AppContextProvider>
   );
 };
 

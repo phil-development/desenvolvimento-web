@@ -1,0 +1,33 @@
+{
+  "translation": {
+    "signIn": {
+      "title": "Sign In",
+      "email": "Email",
+      "password": "Password",
+      "signIn": "Sign In",
+      "loading": "Loading...",
+      "noAccount": "Don't have an account? Sign up",
+      "errors": {
+        "Invalid login credentials": "Invalid login credentials",
+        "Email not confirmed": "Email not confirmed",
+        "missing email or phone": "Missing email or phone",
+        "Password should be at least 6 characters": "Password should be at least 6 characters"
+      }
+    },
+    "signUp": {
+      "title": "Sign Up",
+      "email": "Email",
+      "password": "Password",
+      "signUp": "Sign Up",
+      "loading": "Loading...",
+      "alreadyHaveAccount": "Already have an account? Sign in",
+      "errors": {
+        "User already registered": "User already registered",
+        "Invalid email format": "Invalid email format",
+        "Anonymous sign-ins are disabled": "Anonymous sign-ups are disabled",
+        "Signup requires a valid password": "Signup requires a valid password",
+        "Password should be at least 6 characters": "Password should be at least 6 characters"
+      }
+    }
+  }
+}

@@ -1,15 +1,16 @@
+import React from 'react';
+import { Navigate, useLocation } from 'react-router-dom';
 
-import { Navigate, Outlet, useLocation } from 'react-router-dom';
+const PrivateRoute: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+  const location = useLocation();
 
-const PrivateRoute: React.FC = () => {
-    const token = localStorage.getItem("token");
-    const location = useLocation();
+  const token = localStorage.getItem('supabase.auth.token');
 
-    return token ? (
-        <Outlet />
-    ) : (
-        <Navigate to="/signIn" state={{ from: location }} replace />
-    );
+  if (!token) {
+    return <Navigate to="/signIn" replace state={{ from: location }} />; 
+  }
+
+  return children;
 };
 
 export default PrivateRoute;
