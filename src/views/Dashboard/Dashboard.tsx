@@ -1,9 +1,18 @@
-import React from "react";
-import styles from "./Dashboard.module.scss";
+import React from 'react';
+import { useTranslation } from 'react-i18next';
+import { Layout } from '../../components';
+import styles from './Dashboard.module.scss';
 
 const Dashboard: React.FC = () => {
+
+  const { t } = useTranslation();
+
   return (
-    <div>Dashboard</div>
+    <Layout title={t('dashboardPage.title')} showBackButton={true}>
+
+
+
+    </Layout>
   );
 };
 

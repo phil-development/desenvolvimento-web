@@ -5,7 +5,6 @@
       "email": "Email",
       "password": "Senha",
       "signIn": "Entrar",
-      "loading": "Carregando...",
       "noAccount": "Não tem uma conta? Cadastre-se",
       "errors": {
         "Invalid login credentials": "Credenciais de login inválidas",
@@ -37,6 +36,10 @@
     },
     "settingsPage": {
       "title": "Configurações"
-    }
+    },
+    "dashboardPage": {
+      "title": "Dashboard"
+    },
+    "loading": "Carregando..."
   }
 }

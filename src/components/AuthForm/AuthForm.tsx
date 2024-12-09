@@ -57,7 +57,7 @@ const AuthForm: React.FC<AuthFormProps> = ({
         />
         {error && <div className={styles.error}>{t(error)}</div>}
         <Button type="submit" disabled={loading}>
-          {loading ? t("signIn.loading") : t(submitTextKey)}
+          {loading ? t("loading") : t(submitTextKey)}
         </Button>
         <Link to={linkTo} className={styles.link}>
           {t(linkTextKey)}

@@ -5,5 +5,7 @@ export { default as Button } from './Button/Button';
 export { default as Card } from './Card';
 export { default as DatePicker } from './DatePicker';
 export { default as DateTimePicker } from './DateTimePicker';
+export { default as Footer } from './Footer/Footer';
 export { default as Input } from './Input/Input';
 export { default as LanguageSelect } from './LanguageSelect/LanguageSelect';
+export { default as Layout } from './Layout/Layout';
