@@ -11,7 +11,7 @@ import SignUp from '../views/SignUp/SignUp';
 
 const AppRoutes: React.FC = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/desenvolvimento-web">
       <Routes>
         <Route path="/signIn" element={<PublicRoute><SignIn /></PublicRoute>} />
         <Route path="/signUp" element={<PublicRoute><SignUp /></PublicRoute>} />
