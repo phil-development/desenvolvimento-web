@@ -1,11 +1,13 @@
+@use '../../styles/variables';
+
 .footer {
     width: 100%;
     height: 36px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #111;
-    color: white;
+    background-color: variables.$bg-component-primary;
+    color: variables.$txt-color;
     text-align: center;
 
 }

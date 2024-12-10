@@ -1,11 +1,14 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import styles from './Footer.module.scss';
 
 const Footer: React.FC = () => {
+
+  const { t } = useTranslation();
+
   return (
     <footer className={styles.footer}>
-      {/* Conteúdo do footer */}
-      <p>© 2023 Meu Site. Todos os direitos reservados.</p>
+      <p>{t('footer')}</p>
     </footer>
   );
 };

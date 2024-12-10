@@ -1,8 +1,10 @@
+@use '../../styles/variables';
+
 .container {
     position: relative;
     display: inline-block;
-    background-color: #191919;
-    color: white;
+    background-color: variables.$bg-component-secondary;
+    color: variables.$txt-color;
     border-radius: 4px;
     font-size: 14px;
     width: 40px;
@@ -35,7 +37,7 @@
     list-style: none;
     padding: 0;
     margin: 0;
-    background-color: #111;
+    background-color: variables.$bg-component-primary;
     border-radius: 4px;
     width: 100%;
 
@@ -47,7 +49,7 @@
         height: 100%;
 
         &:hover {
-            background-color: #333;
+            background-color: variables.$bg-component-details;
         }
     }
 }
