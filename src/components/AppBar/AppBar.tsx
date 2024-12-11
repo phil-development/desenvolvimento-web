@@ -39,6 +39,7 @@ const AppBar: React.FC<AppBarProps> = ({ title, showBackButton }) => {
                             display: 'flex',
                             alignItems: 'center',
                             cursor: 'pointer',
+                            marginRight: '1rem'
                         }}
                         onClick={() => navigate(-1)}
                     >

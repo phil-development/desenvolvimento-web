@@ -7,20 +7,13 @@
 
 }
 
-.content {
-
-    width: 100%;
-    max-width: 400px;
-    padding: 0 2rem;
-
-}
-
 .details {
 
     width: 100%;
-    background-color: #191919;
+    background-color: variables.$bg-component-secondary;
     padding: 1rem;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 1rem;  
@@ -30,8 +23,10 @@
 .babyDetails,
 .detailsPainel {
 
-    width: 20%;
+    flex: 1;
+    min-width: 240px;
     padding: 1rem;
-    background-color: #111;
+    background-color: variables.$bg-component-primary;
+
 
 }

@@ -6,8 +6,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 2rem 2rem 1rem;
+  padding: 0 2rem;
   background-color: variables.$bg-color;
+
+  @media (max-width: 720px) {
+    padding: 2rem 1rem 2rem 1rem;
+  }
 
 }
 
@@ -29,7 +33,6 @@
 .title {
   font-size: 1.2rem;
   font-weight: bold;
-  margin: 0 0 0 1rem;
 }
 
 .profileAndLanguage {

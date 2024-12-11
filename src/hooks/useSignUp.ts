@@ -1,14 +1,15 @@
-import { useState, useContext } from 'react';
-import { useNavigate } from 'react-router-dom';
-import { AppContext } from '../Context';
+import { useState, useContext } from "react";
+import { useNavigate } from "react-router-dom";
+import { AppContext } from "../Context";
 
 const useSignUp = () => {
   const { supabase } = useContext(AppContext);
   const navigate = useNavigate();
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [showPopUp, setShowPopUp] = useState(false);
 
   const signUp = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -22,7 +23,7 @@ const useSignUp = () => {
       if (error) {
         setError(error.message);
       } else {
-        navigate('/signIn');
+        setShowPopUp(true);
       }
     } catch (error: any) {
       setError(error.message);
@@ -31,7 +32,22 @@ const useSignUp = () => {
     }
   };
 
-  return { email, setEmail, password, setPassword, loading, error, signUp };
+  const handleClosePopUp = () => {
+    setShowPopUp(false);
+    navigate("/signIn");
+  };
+
+  return {
+    email,
+    setEmail,
+    password,
+    setPassword,
+    loading,
+    error,
+    signUp,
+    showPopUp,
+    handleClosePopUp,
+  };
 };
 
 export default useSignUp;

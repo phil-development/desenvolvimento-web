@@ -1,8 +1,12 @@
 import React from "react";
 import useSignUp from "../../hooks/useSignUp";
-import AuthForm from "../../components/AuthForm/AuthForm";
+import { AuthForm, Popup } from "../../components/";
+import { useTranslation } from 'react-i18next';
 
 const SignUp: React.FC = () => {
+
+  const { t } = useTranslation();
+
   const {
     email,
     setEmail,
@@ -11,22 +15,38 @@ const SignUp: React.FC = () => {
     loading,
     error,
     signUp,
+    showPopUp,
+    handleClosePopUp,
   } = useSignUp();
 
+
+  
   return (
-    <AuthForm
-      titleKey="signUp.title"
-      submitTextKey="signUp.signUp"
-      linkTo="/signIn"
-      linkTextKey="signUp.alreadyHaveAccount"
-      onSubmit={signUp}
-      error={error ? `signUp.errors.${error}` : null}
-      loading={loading}
-      email={email}
-      setEmail={setEmail}
-      password={password}
-      setPassword={setPassword}
-    />
+    <div>
+      <AuthForm
+        titleKey="signUp.title"
+        submitTextKey="signUp.signUp"
+        linkTo="/signIn"
+        linkTextKey="signUp.alreadyHaveAccount"
+        onSubmit={signUp}
+        error={error ? `signUp.errors.${error}` : null}
+        loading={loading}
+        email={email}
+        setEmail={setEmail}
+        password={password}
+        setPassword={setPassword}
+      />
+
+      {showPopUp && (
+        <Popup
+          isOpen={showPopUp}
+          onClose={handleClosePopUp}
+          title={t('popup.signUpSuccess')}
+          message={t('popup.signUpConfirm')}
+          autoCloseDuration={5000}
+        />
+      )}
+    </div>
   );
 };
 

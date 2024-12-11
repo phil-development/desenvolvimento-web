@@ -9,6 +9,7 @@ const useSignIn = () => {
   const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [showPopUp, setShowPopUp] = useState(false);
 
   const signIn = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -22,8 +23,11 @@ const useSignIn = () => {
       if (error) {
         setError(error.message);
       } else {
-        localStorage.setItem('supabase.auth.token', JSON.stringify(data.session?.access_token)); 
-        navigate('/');
+        localStorage.setItem(
+          "supabase.auth.token",
+          JSON.stringify(data.session?.access_token),
+        );
+        setShowPopUp(true);
       }
     } catch (error: any) {
       setError(error.message);
@@ -32,7 +36,22 @@ const useSignIn = () => {
     }
   };
 
-  return { email, setEmail, password, setPassword, loading, error, signIn };
+  const handleClosePopUp = () => {
+    setShowPopUp(false);
+    navigate("/");
+  };
+
+  return {
+    email,
+    setEmail,
+    password,
+    setPassword,
+    loading,
+    error,
+    signIn,
+    showPopUp,
+    handleClosePopUp,
+  };
 };
 
 export default useSignIn;

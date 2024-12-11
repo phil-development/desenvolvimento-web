@@ -8,3 +8,4 @@ export { default as Footer } from './Footer/Footer';
 export { default as Input } from './Input/Input';
 export { default as LanguageSelect } from './LanguageSelect/LanguageSelect';
 export { default as Layout } from './Layout/Layout';
+export { default as Popup } from './Popup/Popup';

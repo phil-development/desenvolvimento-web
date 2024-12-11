@@ -28,6 +28,12 @@
         "Password should be at least 6 characters": "La contraseña debe tener al menos 6 caracteres"
       }
     },
+    "popup": {
+      "signInSuccess": "¡Inicio de sesión exitoso!",
+      "signInRedirect": "Serás redirigido a la página de inicio en breve...",
+      "signUpSuccess": "¡Registro exitoso!",
+      "signUpConfirm": "Revisa tu bandeja de entrada y confirma tu correo electrónico para activar tu cuenta."
+    },
     "appBar": {
       "logout": "Cerrar sesión"
     },
